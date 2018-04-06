@@ -18,7 +18,6 @@ for(i=0;i<n;i++)
 v=s[i];
 c=0;
 a=0;
-cout<<"\nC="<<c;
 n2=v.length();
 if(n2==6)
 {
@@ -33,7 +32,6 @@ case 'l':c++;break;
 case 'i':c++;break;
 }
 }
-cout<<"\nC="<<c;
 if(c==6)
 {c2++;}
 }
