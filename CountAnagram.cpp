@@ -3,8 +3,7 @@ using namespace std;
 class CountAnagram
 {
 string s[1000],v;
-bool b;
-int n,i,c,n2,j,c2=0;
+int n,i,c,n2,j,c2=0,a=0;
 void get()
 {
 cout<<"Input"<<endl;
@@ -18,19 +17,17 @@ for(i=0;i<n;i++)
 {
 v=s[i];
 c=0;
-b=false;
+a=0;
 cout<<"\nC="<<c;
 n2=v.length();
 if(n2==6)
 {
 for(j=0;j<n2;j++)
 {
-if((v[j]=='a')&&b)
-{c++;}
 switch(v[j])
 {
 case 'k':c++;break;
-case 'a':c++;b=true;break;
+case 'a':if(a<2){a++;c++;}break;
 case 'b':c++;break;
 case 'l':c++;break;
 case 'i':c++;break;
